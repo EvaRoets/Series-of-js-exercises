@@ -16,16 +16,8 @@ const tvshows = [
   `the oa`,
 ];
 
-const wrapWithTag = (content, tagname) => {
-  `return <${tagname}>${content}</${tagname}>`;
-};
-
-const parseTitle = title => {
-  const lowerTitle = title.toLowerCase();
-  const wrapped = wrapWithTag(lowerTitle, `li`);
-  document.write(wrapped);
-};
+const wrapWithTag = (content, tagname) => `<${tagname}>${content}</${tagname}>`;
 
 document.write(`<ol>`);
-tvshows.forEach(tvshows => parseTitle(tvshows));
+tvshows.forEach(tvshow => document.write(wrapWithTag(tvshow, `li` )));
 document.write(`</ol>`);

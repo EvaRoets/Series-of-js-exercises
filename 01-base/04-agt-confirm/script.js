@@ -20,18 +20,21 @@
     let homeTown = prompt ("Which town do you live in?");
 
     //TODO ask confirmation
-    let infoCorrect = confirm ("Is your information correct?");
-    if (infoCorrect === true) {
-    } 
+    let infoCorrect = confirm (`Is your information correct?
+                age: ${age} 
+                gender: ${gender} 
+                town: ${homeTown}
+                 `)
+
     //TODO  Ask to confirm, If not confirmed, re-run
+    if (infoCorrect === true) {
+    }
     else {
          age = prompt ("How old are you?");
          gender = prompt ("?");
          homeTown = prompt ("Which town do you live in?");
-        infoCorrect = confirm ("Is your information correct?");
+         infoCorrect = confirm ("Is your information correct?");
     }
-
-
 
 
 })();

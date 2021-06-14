@@ -1,7 +1,3 @@
-/*
-* Make an array with all movies currently playing at your local cinema
-* Display the movies in an ul list.
- */
 const summerMovies = [
     `The Conjuring: The Devil Made Me Do It`,
     `Nomadland`,
@@ -11,11 +7,15 @@ const summerMovies = [
     `Sons of Philadelphia`,
     `The Honest Thief`,
     `Wolfwalkers`,
-];
+]
+const wrapText = (content, tag) =>{return `<${tag}>${content}</${tag}>`;}
 
-for (let i = 0; i < summerMovies.length; i++) {
-    document.write(`<ul>`);
-    document.write(`<li>${summerMovies[i]}</li>`);
-    document.write(`</ul>`);
-}
+const createSummerMovieList = (summerMovies) =>{
+    return `
+    <ul>${summerMovies
+        .map(summerMovie => wrapText(summerMovie, 'li')).join(``)}
+    </ul>
+    `
+};
 
+document.write(createSummerMovieList(summerMovies));

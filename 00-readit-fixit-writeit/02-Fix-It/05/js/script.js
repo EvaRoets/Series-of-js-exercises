@@ -17,25 +17,21 @@ const shows = [
 ];
 
 const wrapWithTag = (content, tagname) => `<${tagname}>${content}</${tagname}>`;
-
 const writeTitle = title => {
   const newTitle = uCFirst(title);
   document.write(wrapWithTag(newTitle, `li`));
 };
-
 const uCFirst = sentence => {
   const words = sentence.split(``);
   words = words.map(word => word.charAt(0).toUpperCase() + word.slice());
   return words.join();
 };
-
 document.write(`<ol>`);
 shows.forEach(show => writeTitle(show));
 document.write(`</ol>`);
 
+// TODO every word in a title to start with a capital letter.
 /*
-
-In this exercise we want every word in a title to start with a capital letter.
 * Look at the error message in the dev tools and fix it.
 * Look at the documentation of split().
 * Look at the documentation of charAt().

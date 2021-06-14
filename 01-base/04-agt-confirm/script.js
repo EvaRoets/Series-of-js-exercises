@@ -9,8 +9,29 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
+
+
 (function() {
 
     // your code here
+    //TODO ask Ask three questions to the user: his/her Age, Gender, and the Town where he/she lives.
+    let age = prompt ("How old are you?");
+    let gender = prompt ("What is your gender?");
+    let homeTown = prompt ("Which town do you live in?");
+
+    //TODO ask confirmation
+    let infoCorrect = confirm ("Is your information correct?");
+    if (infoCorrect === true) {
+    } 
+    //TODO  Ask to confirm, If not confirmed, re-run
+    else {
+         age = prompt ("How old are you?");
+         gender = prompt ("?");
+         homeTown = prompt ("Which town do you live in?");
+        infoCorrect = confirm ("Is your information correct?");
+    }
+
+
+
 
 })();

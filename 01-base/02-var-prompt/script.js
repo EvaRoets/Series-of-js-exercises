@@ -12,5 +12,9 @@
 (function() {
 
     // your code here
+    //TODO the name of the user
+    // TODO display in dialog box</em> the following welcome message : <em>Hello, [name] !</em>.</p>
+    let userName = prompt("Please enter your name")
+    alert(`Hello, ${userName}!`)
 
 })();

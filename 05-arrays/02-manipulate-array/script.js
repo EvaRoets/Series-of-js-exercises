@@ -11,7 +11,7 @@
 
 (function() {
 
-    var fruits = [
+    let fruits = [
         "pomme",
         "poire",
         "fraise",
@@ -25,5 +25,12 @@
     ];
 
     // your code here
-
+    document.getElementById('run').onclick = function() {
+        console.log(fruits);
+        fruits.shift();
+        fruits.pop();
+        fruits.unshift("banana");
+        fruits.push("kiwi");
+        console.log(fruits);
+    }
 })();

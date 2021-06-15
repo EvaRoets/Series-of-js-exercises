@@ -11,11 +11,11 @@
 
 (function() {
 
-    var fruits = [
+    let fruits = [
         "apple",
         "pear",
         "raspberry",
-        "tomatos",
+        "tomatos", // fourth item, index [3]
         "kiwi",
         "banana",
         "orange",
@@ -27,5 +27,7 @@
     ];
 
     // your code here
-
+    document.getElementById('run').onclick = function() {
+        console.log(fruits[3]);
+    }
 })();

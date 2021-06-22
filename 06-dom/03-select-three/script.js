@@ -12,5 +12,8 @@
 (function() {
 
     // your code here
-
+   const target = document.querySelectorAll(".target");
+   target.forEach(target => {
+       target.innerHTML = "Owned!";
+   })
 })();

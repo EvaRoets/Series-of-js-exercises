@@ -17,7 +17,7 @@
     /* // TODO convert userInput to date format
     let doBirth = new Date(userInput);
      */
-    if(userinput==null || userinput=='') {
+    if(userInput==null || userInput=='') {
 
         document.getElementById("message").innerHTML = "Choose a date please!";
         return false;

@@ -10,20 +10,28 @@
 // You will have time to focus on it later.
 
 (function() {
-    // to get the value of an input: document.getElementById("element-id").value
-    document.getElementById("addition").addEventListener("click", function() {
-        // perform an addition
-    });
+// TODO call input from html/userInput
+ document.getElementById("addition").addEventListener("click", function() {
+ });
+ document.getElementById("subtraction").addEventListener("click", function() {
+ });
+ document.getElementById("multiplication").addEventListener("click", function() {
+ });
+ document.getElementById("division").addEventListener("click", function() {
+ });
+ let opOne = document.getElementById('op-one').value;
+ let opTwo = document.getElementById('op-two').value;
+ let result = '';
 
-    document.getElementById("subtraction").addEventListener("click", function() {
-        // perform an subtraction
-    });
+//TODO store input values as vars
+//TODO compute
+//  op-one.concat(op-two)
 
-    document.getElementById("multiplication").addEventListener("click", function() {
-        // perform an multiplication
-    });
+//TODO display result in console.log
+console.log(result);
 
-    document.getElementById("division").addEventListener("click", function() {
-        // perform an division
-    });
+
+
+
+
 })();

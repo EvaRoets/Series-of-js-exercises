@@ -41,9 +41,10 @@
 
     // your code here
     document.getElementById('run').onclick = function() {
-    people.forEach( (person) => {
-        console.log(person.firstname);
-    })
-    })
+        people.forEach((people)=>{
+            console.log(people.firstname);
+        })
+    }
 })();
+
 

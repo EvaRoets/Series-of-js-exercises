@@ -31,5 +31,5 @@
         fruits.forEach((fruit)=>{
             console.log(fruit);
         })
-    })
+    }
 })();

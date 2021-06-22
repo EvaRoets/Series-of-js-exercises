@@ -11,4 +11,16 @@
 
 (() => {
     // your code here
+    let person = {
+        lastName:"Roets",
+        firstName: "Eva",
+        age: 34,
+        city: "Ghent",
+        country:"Belgium"
+    };
+
+    document.getElementById("run").addEventListener("click",function() {
+        console.log(`${person.lastName}, ${person.firstName}, ${person.age}, ${person.city}, ${person.country}`);
+    })
+
 })();

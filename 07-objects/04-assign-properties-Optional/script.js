@@ -11,7 +11,7 @@
 
 (() => {
     const computers = [
-        {id: "0001", available: false, user: "leny", os: "macOS"},
+        {id: "0001", available: false, user: "Leny", os: "macOS"},
         {id: "0002", available: false, user: "Nicolas"},
         {id: "0003"},
         {id: "0004", os: "Windows"},
@@ -27,4 +27,20 @@
         user: null,
     };
     // your code here
+    /*
+
+     */
+    if (computers.hasOwnProperty('available') || computers.hasOwnProperty('os') || computers.hasOwnProperty('user') === true) {
+            console.log (`${computers.available},${computers.os}, ${computers.user}`);
+    }
+    else{
+        //TODO fix this
+
+        defaultProps.setAttribute("available", "true");
+        defaultProps.setAttribute("os", "linux");
+        defaultProps.setAttribute("user", "null");
+    }
+
+
+
 })();

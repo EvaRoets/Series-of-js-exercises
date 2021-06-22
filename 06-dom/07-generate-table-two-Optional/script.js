@@ -12,5 +12,20 @@
 (function() {
 
     // your code here
+    //TODO create HTML table with 10 columns and 10 rows,
+    // containing the tables of multiplication from 1 to 10
+    let table = document.createElement("table");
+    let tableBody = document.createElement("tbody");
+    for (i=0; i<10; i++){
+        let row = document.createElement("tr");
+        for (j=0; j<10; j++){
+            let cell = document.createElement("td");
+            cell.innerHTML = (j+1) * (i+1);
+            row.appendChild(cell);
+        }
+        tableBody.appendChild(row);
+    }
+    table.appendChild(tableBody);
+    document.getElementById("target").appendChild(table)
 
 })();

@@ -12,5 +12,14 @@
 (function() {
 
     // your code here
-
+    document.getElementById("run").addEventListener("click",function() {
+        let pswdOne = document.getElementById("pass-one").value;
+        //console.log(pswdOne)
+        let pswdTwo = document.getElementById("pass-two").value;
+        //console.log(pswdTwo)
+        if (pswdOne !== pswdTwo) {
+            document.getElementById("pass-one").style.borderColor = "red"
+            document.getElementById("pass-two").style.borderColor = "red"
+        }
+    });
 })();

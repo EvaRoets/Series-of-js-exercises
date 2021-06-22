@@ -12,17 +12,15 @@
 (function() {
 
     // your code here
+    let orgImgValue = document.querySelector("img").getAttribute ("src");
+    let hoverImgValue = document.querySelector("img").getAttribute ("data-hover");
 
-    document.querySelector(img).src;
+    document.querySelector("img").addEventListener("mouseover", function(event) {
+        document.querySelector("img").setAttribute("src", hoverImgValue);
+    });
 
-    let orgImg = document.getElementsByClassName("material");
-    let orgImgValue = orgImg.getAttribute ("src");
-    let hoverImg = document.getElementsByClassName("material");
-    let hoverImgValue = hoverImg.getAttribute ("src");
-    img.onmouseover = function() {
-        img.src = document.querySelector('img').data-hover;
-    }
-    img.onmouseout = function() {
-        img.src = document.querySelector('img').src;
-    }
+    document.querySelector("img").addEventListener("mouseout", function(event) {
+        document.querySelector("img").setAttribute("src", orgImgValue);
+    });
+
 })();

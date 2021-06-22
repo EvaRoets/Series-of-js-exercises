@@ -12,7 +12,6 @@
 (function() {
 
     // your code here
-    //TODO click the button = get the value of the input
     document.getElementById("run").onclick = function() {
         let bgColor = document.getElementById("color").value;
         document.body.style.backgroundColor = bgColor;

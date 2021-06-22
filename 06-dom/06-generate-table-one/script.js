@@ -12,5 +12,16 @@
 (function() {
 
     // your code here
+    //document.getElementById("target");
+    let table = document.createElement("table");
+    let tableBody = document.createElement("tbody");
+    for (let i=0; i<10; i++){
+        let row = document.createElement("tr");
+        let cell = document.createElement("td");
+        row.appendChild(cell);
+        tableBody.appendChild(row);
+    }
+    table.appendChild(tableBody);
+    document.getElementById("target").appendChild(table)
 
 })();

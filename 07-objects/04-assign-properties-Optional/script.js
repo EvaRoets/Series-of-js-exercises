@@ -34,8 +34,7 @@
             console.log (`${computers.available},${computers.os}, ${computers.user}`);
     }
     else{
-        //TODO fix this
-
+        //TODO fix
         defaultProps.setAttribute("available", "true");
         defaultProps.setAttribute("os", "linux");
         defaultProps.setAttribute("user", "null");

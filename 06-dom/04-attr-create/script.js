@@ -12,6 +12,7 @@
 (function() {
 
     // your code here
+    //TODO fix
     let oldImgValue = document.getElementById("source").getAttribute("data-image");
     let newImg = document.createElement("newImg");
     newImg.setAttribute(newImg, oldImgValue);

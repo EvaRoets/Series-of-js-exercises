@@ -10,6 +10,7 @@
 // You will have time to focus on it later.
 
 (function() {
+ //TODO fix
 // TODO call input from html/userInput
  document.getElementById("addition").addEventListener("click", function() {
  });

@@ -8,41 +8,27 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
-    // display it in the tag whose id is "target".
-    // Use the tag <strong>template</strong> to reproduce a suitable html structure
-    document.getElementById("run").addEventListener("click", function (){
-        document.getElementById("hero-id")})
-    fetch("http://localhost:63342/js-exercises/_shared/api.json")
-        .then(function (response) {
-            return response.json();
-        })
-        .then(function (data) {
-            displayData(data);
-        })
-        .catch(function (err) {
-            console.log("The json file is not loading correctly. Adjust your code ;)");
-        });
+    document
+        .getElementById("run")
+        .addEventListener("click", () => {
+            // find the id
+            const id = Number(document.getElementById('hero-id').value)
 
-    function displayData (data) {
-        let listContainer = document.getElementById("target");
-        for (let i = 0; i < data.length; i++) {
-            let listHeroesHere = document.createElement("div");
-            listHeroesHere.innerHTML = "Heroes" + data[i].name + " " + data[i].alterEgo + " " + data[i].abilities;
-            listContainer.appendChild(listHeroesHere);
-//TODO adopt template styling
-        }
-    }
+            // get the list of heroes
+            fetch("http://localhost:63342/js-exercises/_shared/api.json")
+                .then(response => {
+                    response.json()
+                        .then(data => {
+                            // lookup the hero in the list
+                            const hero = data.heroes.find(hero => hero.id === id)
+
+                            // display result in target
+                            document
+                                .getElementById('target')
+                                .innerHTML = `Hero name = ${hero.name}`
+                            // adopt template
+                        })
 
 
-
-
-
-
-
-
-
-
-
-
-    })();
+                })
+        })}

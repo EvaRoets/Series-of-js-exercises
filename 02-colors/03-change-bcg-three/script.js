@@ -12,9 +12,7 @@
 (function() {
 
     // your code here
-    document.getElementById("run").onclick = function () {
-        let randomBgColor ='#' + Math.floor(Math.random() * 16777215).toString(16);
-        document.body.style.backgroundColor = randomBgColor;
+    document.getElementById("run").onclick = function (){
+        document.body.style.backgroundColor = "#"+Math.floor(Math.random()*16777215).toString(16);
     }
 })();
-

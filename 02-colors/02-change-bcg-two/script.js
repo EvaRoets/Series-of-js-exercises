@@ -12,8 +12,7 @@
 (function() {
 
     // your code here
-    document.getElementById("run").onclick = function() {
-        let bgColor = document.getElementById("color").value;
-        document.body.style.backgroundColor = bgColor;
+    document.getElementById("run").onclick = function (){
+        document.body.style.backgroundColor = document.getElementById("color").value
     }
 })();

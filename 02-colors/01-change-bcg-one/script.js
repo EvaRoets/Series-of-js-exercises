@@ -12,16 +12,17 @@
 (function() {
 
     // your code here
-    document.getElementById("red").onclick = function() {
-        document.body.style.backgroundColor = "#ff0000";
+    //TODO btn click change bgcolor page input
+    document.getElementById("red").onclick = function (){
+        document.body.style.backgroundColor = "red";
     }
-    document.getElementById("green").onclick = function() {
-        document.body.style.backgroundColor = "#00ff00";
+    document.getElementById("green").onclick = function (){
+        document.body.style.backgroundColor = "green";
     }
-    document.getElementById("yellow").onclick = function() {
-        document.body.style.backgroundColor = "#ffff00";
+    document.getElementById("yellow").onclick = function (){
+        document.body.style.backgroundColor = "yellow";
     }
-    document.getElementById("blue").onclick = function() {
-        document.body.style.backgroundColor = "#0000ff";
+    document.getElementById("blue").onclick = function (){
+        document.body.style.backgroundColor = "blue";
     }
 })();

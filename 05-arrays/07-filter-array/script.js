@@ -11,7 +11,7 @@
 
 (function() {
 
-    var people = [
+    const people = [
         {
             firstname: "Dreddy",
             lastname: "Nussgen",
@@ -90,5 +90,8 @@
     ];
 
     // your code here
+    console.log(
+        people.filter(person => person.age > 18)
+    )
 
 })();

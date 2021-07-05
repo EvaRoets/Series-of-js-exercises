@@ -10,8 +10,7 @@
 // You will have time to focus on it later.
 
 (function() {
-
-    var people = [
+    const people = [
         {
             firstname: "Bradford",
             lastname: "Coldbath",
@@ -88,6 +87,9 @@
             email: "gkeatche@google.fr",
         },
     ];
+
+    const person = people.findIndex(person => person.firstname === 'Jean' && person.lastname === 'Dupont')
+
 
     // your code here
 

@@ -8,18 +8,30 @@
 
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
-let wantCake = prompt ("Would you like some cake?");
-let yesCake = "Yes";
+
 
 (function() {
 
-  // your code here
-    //TODO Ask the user if he wants some cake.
-    // TODO If yes, congratulate him/her; for any other response, say:<em>More cake for me then :p !</em>
+    // your code here
+    let cakeRequest = prompt("Would you like some cake? (Y/N)")
+    let Yes = "Y";
+    let No = "N";
 
-    if (wantCake === yesCake )
-    alert ("Excellent choice!");
-    else
-        alert ("More cake for me then :p !");
+    if (cakeRequest !== Yes && cakeRequest !== No) {
+        alert("Please answer with Y or N.");
+        prompt("Would you like some cake? (Y/N)");
+            if (cakeRequest === Yes) {
+                alert("Excellent choice!");
+            }
+            else if (cakeRequest === No) {
+                alert("Too bad! No cake for you, more cake for me!")
+            }
+    } else if (cakeRequest === Yes) {
+        alert("Excellent choice!");
+    }
+    else if (cakeRequest === No) {
+        alert("Too bad! No cake for you, more cake for me!")
+    }
 
 })();
+

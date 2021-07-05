@@ -11,21 +11,25 @@
 
 (function() {
 
-    var fruits = [
-        "apple",
-        "perry",
-        "strawberry",
-        "tomato",
-        "kiwi",
-        "banana",
-        "orange",
-        "mandarin",
-        "durian",
-        "peach",
-        "grapes",
-        "cherry",
+    const fruits = [
+        { type: "apple"},
+        { type: "perry"},
+        { type: "strawberry"},
+        { type: "tomato"},
+        { type: "kiwi"},
+        { type: "banana"},
+        { type: "orange"},
+        { type: "mandarin"},
+        { type: "durian"},
+        { type: "peach"},
+        { type: "grapes"},
+        { type: "cherry"},
     ];
 
     // your code here
+    console.log(
+        fruits.every(fruit => fruit.type === 'apple') ? 'Yes' : 'No'
+    )
+
 
 })();

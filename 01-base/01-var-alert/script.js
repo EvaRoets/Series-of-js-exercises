@@ -9,12 +9,9 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+(function () {
 
     // your code here
-    // TODO create a variable with the name of your choice,the value to be a string
-    // TODO Display the variable in a dialog box
-
     let helloWord = "Hello, World!";
     alert(helloWord);
 

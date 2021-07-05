@@ -9,32 +9,22 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-
-
 (function() {
+    let age = prompt ("What is your age?");
+    let gender = prompt("What is your gender?");
+    let town = prompt ("What is your town of residence?");
+    let confirmInfo = confirm (`Is this information correct? 
+         Age:${age},
+         Gender:${gender}, 
+         Town of residence:${town}?
+         `);
 
-    // your code here
-    //TODO ask Ask three questions to the user: his/her Age, Gender, and the Town where he/she lives.
-    let age = prompt ("How old are you?");
-    let gender = prompt ("What is your gender?");
-    let homeTown = prompt ("Which town do you live in?");
-
-    //TODO ask confirmation
-    let infoCorrect = confirm (`Is your information correct?
-                age: ${age} 
-                gender: ${gender} 
-                town: ${homeTown}
-                 `)
-
-    //TODO  Ask to confirm, If not confirmed, re-run
-    if (infoCorrect === true) {
+    if (confirmInfo === true) {
     }
     else {
-         age = prompt ("How old are you?");
-         gender = prompt ("?");
-         homeTown = prompt ("Which town do you live in?");
-         infoCorrect = confirm ("Is your information correct?");
+        age = prompt ("What is your age?");
+        gender = prompt("What is your gender?");
+        town = prompt ("What is your town of residence?");
+        confirmInfo = confirm (`Is this information correct? Age: ${age}, Gender: ${gender}, Town of residence: ${town}?`);
     }
-
-
 })();

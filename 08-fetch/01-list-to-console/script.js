@@ -9,55 +9,13 @@
 
 (() => {
     // your code here
-    document.getElementById("run").addEventListener("click", function (){
+    document.getElementById("run").addEventListener("click", function () {
         fetch("http://localhost:63342/js-exercises/_shared/api.json")
             .then(response => response.json())
             .then(data => console.log(data))
             .catch(error => console.log(error))
     })
 })();
-
-
-
-
-
-const  displayHero = () => {
-
-    fetch('http://localhost:63342/js/01.Series-of-js-exercises/_shared/api.json')
-        .then((response) =>{
-
-            return(response.json())
-        })
-        .then((data)=>{
-            let heroes = data.heroes;
-            let enteredHeroId = document.getElementById('hero-id').value;
-            let foundHero = heroes.find( (hero) =>{
-                if(hero.id == enteredHeroId){
-                    return (hero);
-                }
-            });
-
-
-
-            if (foundHero == undefined){
-                document.getElementById('hero-data').innerHTML = 'No matches found';
-
-            } else {
-                document.getElementById('hero-data').innerHTML = '';
-                let temp = document.getElementById("tpl-hero");
-                let clon = temp.content.cloneNode(true);
-                document.getElementById('hero-data').appendChild(clon);
-                document.querySelector('#hero-data .hero .title .name').innerHTML = foundHero.name;
-                document.querySelector('#hero-data .hero .title .alter-ego').innerHTML = foundHero.alterEgo;
-                document.querySelector('#hero-data .hero .powers').innerHTML = foundHero.abilities;
-            }
-        })
-
-
-};
-document.getElementById('run').addEventListener('click', displayHero);
-
-
 
 
 

@@ -7,15 +7,14 @@ const summerMovies = [
     `Sons of Philadelphia`,
     `The Honest Thief`,
     `Wolfwalkers`,
-]
-const wrapText = (content, tag) =>{return `<${tag}>${content}</${tag}>`;}
-
-const createSummerMovieList = (summerMovies) =>{
+];
+const wrapText = (content, tagName) => {
+    return `<${tagName}>${content}</${tagName}>`;
+}
+const createList = summerMovies => {
     return `
     <ul>${summerMovies
         .map(summerMovie => wrapText(summerMovie, 'li')).join(``)}
-    </ul>
-    `
+    </ul>`
 };
-
-document.write(createSummerMovieList(summerMovies));
+document.write(createList(summerMovies));

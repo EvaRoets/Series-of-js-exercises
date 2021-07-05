@@ -9,7 +9,7 @@ const tvshows = [
   `colony`,
   `24: legacy`,
   `speechless`,
-  `scherlock`,
+  `sherlock`,
   `stranger things`,
   `this is us`,
   `timeless`,
@@ -17,9 +17,8 @@ const tvshows = [
 ];
 
 tvshows.reverse();
-
-document.write(`<ol>`);
-for (let i = 0; i < tvshows.length; i++) {
+document.write("<ol>");
+for (let i=0; i<tvshows.length; i++) {
   document.write(`<li>${tvshows[i]}</li>`);
 }
-document.write(`</ol>`);
+document.write("</ol>");

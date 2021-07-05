@@ -9,32 +9,24 @@ const shows = [
   `colony`,
   `24: legacy`,
   `speechless`,
-  `scherlock`,
+  `sherlock`,
   `stranger things`,
   `this is us`,
   `timeless`,
   `the oa`,
 ];
 
-const wrapWithTag = (content, tagname) => `<${tagname}>${content}</${tagname}>`;
+const wrapWithTag = (content, tagName) => `<${tagName}>${content}</${tagName}>`;
 const writeTitle = title => {
   const newTitle = uCFirst(title);
-  document.write(wrapWithTag(newTitle, `li`));
+  document.write(wrapWithTag(newTitle, "li"));
 };
 const uCFirst = sentence => {
-  const words = sentence.split(``);
+  let words = sentence.split(" ");
   words = words.map(word => word.charAt(0).toUpperCase() + word.slice());
   return words.join();
 };
-document.write(`<ol>`);
+document.write("<ol>");
 shows.forEach(show => writeTitle(show));
-document.write(`</ol>`);
+document.write("</ol>");
 
-// TODO every word in a title to start with a capital letter.
-/*
-* Look at the error message in the dev tools and fix it.
-* Look at the documentation of split().
-* Look at the documentation of charAt().
-* Look at the documentation of slice().
-* Adjust the function to get the desired result
-*/

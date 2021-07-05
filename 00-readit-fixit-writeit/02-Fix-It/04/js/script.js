@@ -9,15 +9,15 @@ const tvshows = [
   `colony`,
   `24: legacy`,
   `speechless`,
-  `scherlock`,
+  `sherlock`,
   `stranger things`,
   `this is us`,
   `timeless`,
   `the oa`,
 ];
 
-const wrapWithTag = (content, tagname) => `<${tagname}>${content}</${tagname}>`;
+const wrapWithTag = (content, tagName) => `<${tagName}>${content}</${tagName}>`;
+document.write("<ol>");
+tvshows.forEach(tvshow => document.write(wrapWithTag(tvshow, "li")));
+document.write("</ol>");
 
-document.write(`<ol>`);
-tvshows.forEach(tvshow => document.write(wrapWithTag(tvshow, `li` )));
-document.write(`</ol>`);

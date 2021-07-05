@@ -40,7 +40,7 @@ const shows = [
     season: 1,
     score: 98,
   }, {
-    title: `scherlock`,
+    title: `sherlock`,
     season: 4,
     score: 65,
   }, {
@@ -62,12 +62,9 @@ const shows = [
   },
 ];
 
-const wrapWithTag = (content, tagname) => `<${tagname}>${content}</${tagname}>`;
-
+const wrapWithTag = (content, tagName) => `<${tagName}>${content}</${tagName}>`;
 const topScoreFilter = show => { };
-
 shows.filter(topScoreFilter);
-
-document.write(`<ol>`);
-shows.forEach(show => document.write(wrapWithTag(show.title, `li`)));
-document.write(`</ol>`);
+document.write("<ol>");
+shows.forEach(show => document.write(wrapWithTag(show.title, "li")));
+document.write("</ol>");

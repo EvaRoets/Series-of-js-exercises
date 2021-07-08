@@ -9,29 +9,44 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-
 (function() {
 
     // your code here
-    let cakeRequest = prompt("Would you like some cake? (Y/N)")
-    let Yes = "Y";
-    let No = "N";
+    let cakeRequest;
+    let yes = "Y";
+    let no = "N";
 
-    if (cakeRequest !== Yes && cakeRequest !== No) {
-        alert("Please answer with Y or N.");
-        prompt("Would you like some cake? (Y/N)");
-            if (cakeRequest === Yes) {
-                alert("Excellent choice!");
-            }
-            else if (cakeRequest === No) {
-                alert("Too bad! No cake for you, more cake for me!")
-            }
-    } else if (cakeRequest === Yes) {
-        alert("Excellent choice!");
-    }
-    else if (cakeRequest === No) {
-        alert("Too bad! No cake for you, more cake for me!")
+    // if (cakeRequest !== yes && cakeRequest !== no) {
+    //     alert("Please answer with (Y/N).");
+    //     prompt("Would you like some cake? (Y/N)");
+    //         if (cakeRequest === yes) {
+    //             alert("Excellent choice!");
+    //         }
+    //         else if (cakeRequest === no) {
+    //             alert("Too bad! No cake for you, more cake for me!")
+    //         }
+    // } else if (cakeRequest === yes) {
+    //     alert("Excellent choice!");
+    // }
+    // else if (cakeRequest === no) {
+    //     alert("Too bad! No cake for you, more cake for me!")
+    // }
+
+    const askQuestion = () => {
+        cakeRequest = prompt("Would you like some cake? (Y/N)");
+        if (!validAnswer(cakeRequest)) {
+            return askQuestion();
+        }
+        if (cakeRequest === yes) {
+            alert("Excellent choice!");
+        } else {
+            alert("Too bad! No cake for you, more cake for me!")
+        }
     }
 
+    const validAnswer = (answer) => {
+        return !(answer !== yes && answer !== no);
+    }
+    
 })();
 

@@ -71,13 +71,32 @@ const theGreatestMusicCollectionForVerou = [
 
 // --- Intermediate ---
 
-// TODO: log all pop songs
-// TODO: write a function that always returns the first song (full object is okay)
-// TODO: write a function that will return a song at the index of your chosing. You may not use a global var for this index
-// TODO: write a function that will return a random song. Use a separate function for the random selection
+// // log all pop songs
+// const popSongs = theGreatestMusicCollectionForVerou.filter((collection) => {
+//     return collection.genre === "pop";
+//     });
+// console.log (popSongs);
+
+// // write a function that always returns the first song (full object is okay)
+// const firstSong = theGreatestMusicCollectionForVerou.shift();
+// const firstSong = theGreatestMusicCollectionForVerou[0];
+// console.log (firstSong);
+
+// write a function that will return a song at the index of your choosing. You may not use a global var for this index
+// const chooseSong = () => {
+//
+// }
+
+// // write a function that will return a random song. Use a separate function for the random selection
+// const randomSongSelection = () => {
+//     let randomSong = theGreatestMusicCollectionForVerou[Math.floor(Math.random() * theGreatestMusicCollectionForVerou.length)];
+//     console.log (randomSong);
+// };
+// randomSongSelection();
+
 
 // --- Advanced ---
-// TODO: write a function that will suggest you a random song from a genre of your chosing. You may use any techniques you want, but try to think about which ones make most sense
+// TODO: write a function that will suggest you a random song from a genre of your choosing. You may use any techniques you want, but try to think about which ones make most sense
 // TODO: write a function that will show all songs (full object is okay) that fit your moment choice. Use the filter function
 // TODO: sort all songs from a certain genre alphabetically. You may not use for or foreach
 

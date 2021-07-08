@@ -43,20 +43,34 @@ const theGreatestMusicCollectionForVerou = [
     },
 ]
 
-// Following todo's can all be done seperately
-// If there is no restriction mentioned in the task, you can use all language features you want to use
-// Best of luck! 🎶
-
 // --- Basics ---
-// TODO: select the author of Baiana
 
+//select the author of Baiana
+// theGreatestMusicCollectionForVerou.forEach(function(collection){
+//     console.log (theGreatestMusicCollectionForVerou[3].author);
+// });
 
+// // log all song titles
+// theGreatestMusicCollectionForVerou.forEach((collection) => {
+//     console.log(collection.title);
+// });
 
-// TODO: log all song titles
-// TODO: use the find function to select the song by Rammstein
-// TODO: do the same to select all songs by Bakermat. Is the find function the right choice here? If not, what would be a better one? (don't use for or foreach)
+// // use the find function to select the song by Rammstein
+// const songRammstein = theGreatestMusicCollectionForVerou.find((collection) => {
+//     return collection.title  === 'Sonne'
+// });
+// console.log(songRammstein)
+
+// // do the same to select all songs by Bakermat. Is the find function the right choice here? If not, what would be a better one? (don't use for or foreach)
+// const songsBakermat = theGreatestMusicCollectionForVerou.filter((collection) => {
+//     return collection.author === "Bakermat";
+//     }
+// )
+// console.log (songsBakermat);
+
 
 // --- Intermediate ---
+
 // TODO: log all pop songs
 // TODO: write a function that always returns the first song (full object is okay)
 // TODO: write a function that will return a song at the index of your chosing. You may not use a global var for this index

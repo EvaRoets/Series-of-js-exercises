@@ -16,17 +16,26 @@ body.appendChild(holygrailBody)
 
 const holygrailNav = document.createElement("nav");
 holygrailNav.classList.add("holygrailNav");
+holygrailBody.appendChild(holygrailNav)
 
 const listNav = document.createElement("ul");
-const listItemNav = document.createElement("li");
+holygrailNav.appendChild(listNav)
+
+const listItem1Nav = document.createElement("li");
+listNav.appendChild(listItem1Nav)
 
 const link1 = document.createElement("a");
 link1.innerText = "The Turkish Angora";
 link1.href = "https://en.wikipedia.org/wiki/Turkish_Angora";
+listItem1Nav.appendChild(link1)
+
+const listItem2Nav = document.createElement("li");
+listNav.appendChild(listItem2Nav)
 
 const link2 = document.createElement("a");
 link2.innerText = "Bob The Bengal";
 link2.href = "https://www.instagram.com/bobcatbengal/";
+listItem2Nav.appendChild(link2)
 
 const main = document.createElement("main");
 main.classList.add("holygrail-content");

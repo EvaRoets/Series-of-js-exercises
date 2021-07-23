@@ -1,22 +1,42 @@
 const body = document.body;
 body.classList.add("holygrail-container");
+body.style.display = "grid";
+body.style.gridTemplateColumns = "1fr";
+body.style.gridTemplateRows = "1fr auto 1fr";
+body.style.gridTemplateAreas = '"header" "holygrailBody" "footer"';
+body.style.fontFamily = "Arial, serif";
+body.style.color = "white";
 
 const divHeader = document.createElement("div");
 divHeader.classList.add("header");
-// body.append(divHeader, holygrailBody, divFooter)
-body.appendChild(divHeader)
+body.appendChild(divHeader);
 
 const header = document.createElement("header");
-header.innerText = "Holy Grail - DOM manipulation"
+header.innerText = "Holy Grail - DOM manipulation";
+header.style.gridArea = "header";
+header.style.backgroundColor = "#ffc996";
+header.style.fontSize = "25px";
+header.style.textAlign = "center";
+header.style.padding = "10px";
 divHeader.appendChild(header);
 
 const holygrailBody = document.createElement("div");
-holygrailBody.classList.add("holygrailBody")
-body.appendChild(holygrailBody)
+holygrailBody.classList.add("holygrailBody");
+holygrailBody.style.display = "grid"
+holygrailBody.style.gridArea = "holygrailBody"
+holygrailBody.style.gridTemplateColumns = "1fr 3fr 1fr"
+holygrailBody.style.gridTemplateRows = "1fr"
+holygrailBody.style.gridTemplateAreas = '"holygrailNav" "main" "aside"';
+holygrailBody.style.fontSize = "12px"
+holygrailBody.style.paddingTop = "10px"
+holygrailBody.style.paddingBottom = "10px"
+body.appendChild(holygrailBody);
 
 const holygrailNav = document.createElement("nav");
 holygrailNav.classList.add("holygrailNav");
-holygrailBody.appendChild(holygrailNav)
+holygrailNav.style.backgroundColor = "#ff749c"
+holygrailNav.style.padding = "10px"
+holygrailBody.appendChild(holygrailNav);
 
 const listNav = document.createElement("ul");
 holygrailNav.appendChild(listNav)
@@ -39,6 +59,9 @@ listItem2Nav.appendChild(link2)
 
 const main = document.createElement("main");
 main.classList.add("holygrail-content");
+main.style.backgroundColor = "#ff8474"
+main.style.textAlign = "justify";
+main.style.padding = "10px"
 holygrailBody.appendChild(main)
 
 const h1 = document.createElement("h1");
@@ -63,19 +86,30 @@ main.appendChild(paragraph3)
 
 const aside = document.createElement("aside");
 aside.classList.add("holyGrailAds")
+aside.style.backgroundColor = "#ff749c"
+aside.style.padding = "10px"
 holygrailBody.appendChild(aside);
 
 const imgSide = document.createElement("img");
 imgSide.src = "ocicat.png";
 imgSide.alt = "Ocicat";
-aside.appendChild(imgSide)
+imgSide.style.width = "200px";
+imgSide.style.height = "auto";
+imgSide.style.justifyContent = "center";
+imgSide.style.alignItems = "center";
+aside.appendChild(imgSide);
 
 const divFooter = document.createElement("div");
-divFooter.classList.add("footer")
-body.appendChild(divFooter)
+divFooter.classList.add("footer");
+body.appendChild(divFooter);
 
 const footer = document.createElement("footer")
-footer.innerHTML = "&#174; Eva Roets 2021"
+footer.innerHTML = "&#174; Eva Roets 2021";
+footer.style.gridArea = "footer";
+footer.style.backgroundColor = "#ffc996";
+footer.style.textAlign = "center";
+footer.style.fontSize = "12px";
+footer.style.padding = "10px";
 divFooter.appendChild(footer);
 
 

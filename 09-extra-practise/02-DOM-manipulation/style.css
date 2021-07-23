@@ -1,0 +1,19 @@
+@media only screen and (max-width:768px){
+    .holygrail-container {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 4fr 1fr;
+        grid-template-areas:
+                "header"
+                "holygrail-body"
+                "footer";
+    }
+    .holygrail-body {
+        grid-template-columns: auto;
+        grid-template-rows: 1fr 2fr 1fr;
+        grid-template-areas:
+        "holygrail-nav"
+        "holgrail-content"
+        "holygrail-ads";
+    }
+}

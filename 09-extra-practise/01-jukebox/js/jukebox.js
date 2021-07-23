@@ -44,23 +44,19 @@ const theGreatestMusicCollectionForVerou = [
 ]
 
 // --- Basics ---
-
 //select the author of Baiana
 // theGreatestMusicCollectionForVerou.forEach(function(collection){
 //     console.log (theGreatestMusicCollectionForVerou[3].author);
 // });
-
 // // log all song titles
 // theGreatestMusicCollectionForVerou.forEach((collection) => {
 //     console.log(collection.title);
 // });
-
 // // use the find function to select the song by Rammstein
 // const songRammstein = theGreatestMusicCollectionForVerou.find((collection) => {
 //     return collection.title  === 'Sonne'
 // });
 // console.log(songRammstein)
-
 // // do the same to select all songs by Bakermat. Is the find function the right choice here? If not, what would be a better one? (don't use for or foreach)
 // const songsBakermat = theGreatestMusicCollectionForVerou.filter((collection) => {
 //     return collection.author === "Bakermat";
@@ -68,9 +64,7 @@ const theGreatestMusicCollectionForVerou = [
 // )
 // console.log (songsBakermat);
 
-
 // --- Intermediate ---
-
 // // log all pop songs
 // const popSongs = theGreatestMusicCollectionForVerou.filter((collection) => {
 //     return collection.genre === "pop";
@@ -86,6 +80,10 @@ const theGreatestMusicCollectionForVerou = [
 // const chooseSong = () => {
 //
 // }
+//
+//
+// var fruits = ["Banana", "Orange", "Apple", "Mango"];
+// return fruits.indexOf("Apple"); // Returns 2
 
 // // write a function that will return a random song. Use a separate function for the random selection
 // const randomSongSelection = () => {
@@ -111,3 +109,15 @@ const theGreatestMusicCollectionForVerou = [
 
 // --- Overarchiever ---
 // TODO: start a band and write a song that you hear once, and is in your mind for the rest of the day. We've all suffered from those, right? Get world-famous. Earn millions. Resist a path leading to the 26th club. Get into IT. Replace the songs in the list with your own.
+
+
+
+public boolean isLowerCase(String phrase)
+{
+    if (phrase == phrase.toLowerCase()){
+        return true
+    }
+    else {
+        return false
+    }
+}

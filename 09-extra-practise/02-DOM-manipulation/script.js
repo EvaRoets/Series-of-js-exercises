@@ -39,28 +39,36 @@ listItem2Nav.appendChild(link2)
 
 const main = document.createElement("main");
 main.classList.add("holygrail-content");
+holygrailBody.appendChild(main)
 
-const h1Nav = document.createElement("h1");
-h1Nav.innerText = "Ocicat";
+const h1 = document.createElement("h1");
+h1.innerText = "Ocicat";
+main.appendChild(h1)
 
-const h2Nav= document.createElement("h2");
-h2Nav.innerText = "Panther munchkin turkish angora puma";
+const h2= document.createElement("h2");
+h2.innerText = "Panther munchkin turkish angora puma";
+main.appendChild(h2)
 
 const paragraph1 = document.createElement("p");
 paragraph1.innerText = "Cat ipsum dolor sit amet, kitty. Sphynx bobcat bengal. Lion grimalkin yet manx tiger and cougar munchkin, for bengal. Malkin bobcat british shorthair yet abyssinian and bengal savannah. Bobcat grimalkin yet manx for himalayan birman grimalkin tabby. Mouser american shorthair. Balinese . Thai ocicat so leopard and ragdoll. Russian blue malkin for cornish rex but malkin devonshire rex bobcat. Cheetah sphynx savannah for ocicat."
+main.appendChild(paragraph1)
 
 const paragraph2 = document.createElement("p");
 paragraph2.innerText = "Munchkin munchkin for cornish rex. American shorthair ocelot. British shorthair bengal.Tomcat ocicat maine coon but tiger but ragdoll grimalkin tiger. Singapura bombay malkin. Bengal tabby so tabby turkish angora for jaguar and ocelot. Ocelot."
+main.appendChild(paragraph2)
 
 const paragraph3 = document.createElement("p");
-paragraph3.innerText = "ussian blue cheetah and balinese . Kitten tiger manx. Tabby mouser leopard. American shorthair. Tiger tiger."
+paragraph3.innerText = "Russian blue cheetah and balinese . Kitten tiger manx. Tabby mouser leopard. American shorthair. Tiger tiger."
+main.appendChild(paragraph3)
 
 const aside = document.createElement("aside");
 aside.classList.add("holyGrailAds")
+holygrailBody.appendChild(aside);
 
 const imgSide = document.createElement("img");
-imgSide.scr = "ocicat.png";
+imgSide.src = "ocicat.png";
 imgSide.alt = "Ocicat";
+aside.appendChild(imgSide)
 
 const divFooter = document.createElement("div");
 divFooter.classList.add("footer")

@@ -1,14 +1,18 @@
-const body = document.querySelector("body");
+const body = document.body;
 body.classList.add("holygrail-container");
 
 const divHeader = document.createElement("div");
 divHeader.classList.add("header");
+// body.append(divHeader, holygrailBody, divFooter)
+body.appendChild(divHeader)
 
 const header = document.createElement("header");
 header.innerText = "Holy Grail - DOM manipulation"
+divHeader.appendChild(header);
 
 const holygrailBody = document.createElement("div");
 holygrailBody.classList.add("holygrailBody")
+body.appendChild(holygrailBody)
 
 const holygrailNav = document.createElement("nav");
 holygrailNav.classList.add("holygrailNav");
@@ -48,11 +52,14 @@ aside.classList.add("holyGrailAds")
 const imgSide = document.createElement("img");
 imgSide.scr = "ocicat.png";
 imgSide.alt = "Ocicat";
+
 const divFooter = document.createElement("div");
 divFooter.classList.add("footer")
+body.appendChild(divFooter)
 
 const footer = document.createElement("footer")
 footer.innerHTML = "&#174; Eva Roets 2021"
+divFooter.appendChild(footer);
 
 
 

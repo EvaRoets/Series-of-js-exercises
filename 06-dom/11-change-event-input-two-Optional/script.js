@@ -12,5 +12,13 @@
 (function() {
 
     // your code here
+    // if the input is at least 8 characters long and contains at least two numbers.
 
+    document.getElementById("pass-one").addEventListener("input", function (){
+        let pswd = document.getElementById("pass-one").value
+        let hasNum = /\d/;
+        if ((pswd.length >= 8) && (hasNum.test(pswd))){
+            document.getElementById("validity").innerText = "A-Okay"
+        }
+    });
 })();

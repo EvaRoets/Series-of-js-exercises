@@ -12,7 +12,7 @@
 (function() {
 
     // your code here
-    document.querySelector("#target").innerHTML = "Owned!";
+    document.querySelector("#target").innerText = "Owned again!"
 
 
 })();

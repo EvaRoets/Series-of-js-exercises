@@ -10,16 +10,13 @@
 // You will have time to focus on it later.
 
 (function() {
-
     // your code here
     document.getElementById("run").addEventListener("click",function() {
-        let pswdOne = document.getElementById("pass-one").value;
-        //console.log(pswdOne)
-        let pswdTwo = document.getElementById("pass-two").value;
-        //console.log(pswdTwo)
-        if (pswdOne !== pswdTwo) {
-            document.getElementById("pass-one").style.borderColor = "red"
-            document.getElementById("pass-two").style.borderColor = "red"
+        let pswd1 = document.getElementById("pass-one").value;
+        let pswd2 = document.getElementById("pass-two").value;
+        if (pswd1 !== pswd2) {
+            pswd1.style.borderColor = "red";
+            pswd2.style.borderColor = "red";
         }
     });
 })();

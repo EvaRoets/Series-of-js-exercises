@@ -9,13 +9,13 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+(function () {
 
     // your code here
     //document.getElementById("target");
     let table = document.createElement("table");
     let tableBody = document.createElement("tbody");
-    for (let i=0; i<10; i++){
+    for (let i = 0; i < 10; i++) {
         let row = document.createElement("tr");
         let cell = document.createElement("td");
         row.appendChild(cell);

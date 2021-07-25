@@ -12,12 +12,21 @@
 (function() {
 
     // your code here
-    //TODO fix
-    let oldImgValue = document.getElementById("source").getAttribute("data-image");
-    let newImg = document.createElement("newImg");
-    newImg.setAttribute(newImg, oldImgValue);
-    document.getElementById("target").appendChild(newImg);
+    // Get the value of the "data-image" attribute from the element with id "source".
+    let dataImg = document.getElementById("source");
+    let link1 = dataImg.getAttribute("data-image");
+    console.log (link1);
 
+    // Create a new image element inside the target element
+    let figure = document.querySelector("figure");
+    const image = document.createElement("img");
+    figure.append(image);
+
+    // that displays the image referred to by the attribute value.
+    image.src = link1;
+
+    // Then remove the original element.
+    dataImg.remove();
 
 
 })();

@@ -10,7 +10,16 @@
 // You will have time to focus on it later.
 
 (function() {
-
     // your code here
+    // Listen for changes in the input field
+    document.getElementById("pass-one").addEventListener("input", function (){
+        let length = document.getElementById("pass-one").value.length
+        let pswd = document.getElementById("pass-one")
+        let maxChar = 10
+        document.getElementById("counter").innerText = `${length}/10`
+        if (length >= maxChar) {
+            pswd.value = pswd.value.substr(0, maxChar+1)
+        }
+    })
 
 })();

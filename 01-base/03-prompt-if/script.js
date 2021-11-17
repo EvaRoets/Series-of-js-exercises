@@ -47,6 +47,6 @@
     const validAnswer = (answer) => {
         return !(answer !== yes && answer !== no);
     }
-    
+
 })();
 

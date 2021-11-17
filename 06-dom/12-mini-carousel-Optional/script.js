@@ -24,7 +24,7 @@
     document.getElementById("next").addEventListener("click", function () {
         for (let i = 0; i <= gallery.length; i++) {
             let img = document.querySelector("img")
-            img.setAttribute("src", "gallery[i]");
+            img.setAttribute("src", "gallery[i]"); // TODO fix
         }
     })
 

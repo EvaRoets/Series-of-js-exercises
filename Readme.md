@@ -4,11 +4,11 @@
 ![jsex2](https://user-images.githubusercontent.com/84382812/136973484-495c3e4b-8a75-4997-a258-71262e214a10.PNG)
 
 
-## Objectives
+## 🎯 Objectives
 - Learn JavaScript with exercises increasing in difficulty as you progress 
 
-## Specifications
-To get the most out of these exercises, some useful resources:
+## ✔️ Specifications
+- To get the most out of these exercises, some useful resources:
 
 - [Silent Teacher](http://silentteacher.toxicode.fr/) - learn and have fun
 - [Solo Learn - Javascript](https://www.sololearn.com/Course/JavaScript/) :uk:
